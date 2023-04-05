@@ -1,0 +1,24 @@
+função rename() - autera nome de arquivos! https://acervolima.com/funcao-renomear-em-c-c/ NÂO PRECISA MAIS!
+locatetime() - <time.h> https://acervolima.com/funcao-time-h-localtime-em-c-com-exemplos/ ==> https://petbcc.ufscar.br/time/ ==> funções tempo
+arquivo binario wb - sem .txt
+int r = strcmp(str,str2); ==> comparação de string
+
+///////////////////////////////////////////////////////////////////
+#include <studio.h>                                               /
+#include <time.h>                                                 /
+                                                                  /
+int main() {                                                      /
+  time_t tempo;                                                   /
+  time(&tempo);                                                   /    
+  struct tm *tempo0 = localtime(&tempo);                          /
+                                                                  /
+  printf("Horário atual: %02d:%02d:%02d\n",                       /
+          tempo0->tm_hour, tempo0->tm_min, tempo0->tm_sec);       /
+                                                                  /
+  return 0;                                                       /
+}                                                                 /
+///////////////////////////////////////////////////////////////////
+
+sistema de senha funciona
+fseek? Arquivo clientes? Transferencia de uma conta para outra?
+https://petbcc.ufscar.br/stdiofuncoes/#fseek
